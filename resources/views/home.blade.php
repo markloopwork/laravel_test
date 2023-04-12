@@ -50,7 +50,7 @@
                                 <td>{{ $user->mobile_number }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    <a href="{{ route('UserEdit',array('id'=>$user->id)) }}">
+                                    <a href="{{ route('User.Edit',array('id'=>$user->id)) }}">
                                         <button class="btn btn-success">Edit</button>
                                     </a>
                                 </td>

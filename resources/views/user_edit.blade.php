@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('User Edit') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('userUpdate') }}">
+                    <form method="POST" action="{{ route('user.Update') }}">
                         @csrf
                         <input type="hidden" name="id" value="{{ $user_details->id }}" />
                         <div class="row mb-3">

@@ -22,5 +22,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware('auth')->name('home');
-Route::get('/user-edit/{id}', [App\Http\Controllers\HomeController::class, 'user_edit'])->middleware('auth')->name('UserEdit');
-Route::post('/user-update', [App\Http\Controllers\HomeController::class, 'user_update'])->middleware('auth')->name('userUpdate');
+Route::get('/user-edit/{id}', [App\Http\Controllers\HomeController::class, 'user_edit'])->middleware('auth')->name('User.Edit');
+Route::post('/user-update', [App\Http\Controllers\HomeController::class, 'user_update'])->middleware('auth')->name('user.Update');
